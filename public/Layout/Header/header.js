@@ -1,0 +1,28 @@
+import React from 'react';
+import { View, StyleSheet, Image, SafeAreaView } from 'react-native';
+
+
+const Header = () => {
+    
+    return (
+        <SafeAreaView style={styles.header}>
+            <Image 
+                source={require("../../../assets/logo-1.png")}
+                resizeMode="contain"
+                style={{height: 50}}
+            />
+        </SafeAreaView>
+    );    
+}
+
+const styles = StyleSheet.create({
+        header: {
+            marginTop: 50,
+            width: "100%",
+            flexDirection: 'row',
+            alignContent: "center",
+            justifyContent: "center",
+            padding: 20
+        }
+    })
+export default Header;
